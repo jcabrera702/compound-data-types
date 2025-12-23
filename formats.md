@@ -41,3 +41,25 @@ fn main() {
     // Pretty-print version:
     println!("{:#?}", list);
 }
+```
+
+## Code Examples from Lesson 2
+
+### Simple Tuple Example (`human`)
+A tuple containing a `String`, an integer (`i32`), and a boolean (`bool`) requires the `{:?}` formatter.
+```rust
+let human: (String, i32, bool) = ("Alice".to_string(), 30, false);
+
+// This works because {:?} handles tuples:
+println!("Human Tuple: {:?}", human); 
+// Output: Human Tuple: ("Alice", 30, false)
+```
+### Complex/Mixed Tuple Example (my_mix_tuple)
+The debug formatter can even handle "mixed" tuples that contain other compound types like an array.
+```rust
+let my_mix_tuple = ("Kratos", 23, true, [1, 2, 3, 4, 5]);
+
+// This outputs the entire structure, including the inner array:
+println!("My Mix Tuple: {:?}", my_mix_tuple);
+// Output: My Mix Tuple: ("Kratos", 23, true, [1, 2, 3, 4, 5])
+```
