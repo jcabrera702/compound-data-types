@@ -26,6 +26,11 @@ fn main() {
     // let stone_cold: String = String::from("Hell,"); make mut in order to push
     let mut stone_cold: String = String::from("Hell,");
     stone_cold.push_str("Yeah");
-    println!("Stone cold says: {}", stone_cold);    
+    println!("Stone cold says: {}", stone_cold);  
+
+    let string: String = String::from("Hello, World!");
+    // let slice: &str = &string; //This would return the whole message
+    let slice: &str = &string[0..=4];
+    println!("Slice Value: {}", slice);  
     
 }
