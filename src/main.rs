@@ -8,7 +8,7 @@ fn main() {
     println!("Fruits Array: {}", fruits[1]);
     println!("Fruits Array: {}", fruits[2]);
 
-    //SLices
+    //SLices; stored on the stack
     let number_slices:&[i32] = &[1,2,3,4,5];
     println!("Number Slice: {:?}", number_slices);
 
@@ -17,4 +17,15 @@ fn main() {
 
     let book_slice:&[&String] = &[&"IT".to_string(), &"Harry Potter".to_string(), &"Zen".to_string()];
     println!("Book Slice: {:?}", book_slice);
+
+
+    //Strings vs String Slices (&str)
+    //Strings [growable, mutable, owned string type]
+    //String Allocated on the heap
+    // Declare String with String::from() or .to_string()
+    // let stone_cold: String = String::from("Hell,"); make mut in order to push
+    let mut stone_cold: String = String::from("Hell,");
+    stone_cold.push_str("Yeah");
+    println!("Stone cold says: {}", stone_cold);    
+    
 }
