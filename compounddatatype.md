@@ -10,7 +10,8 @@ Arrays have a **fixed length** known at compile time. All elements must be of th
 
 ## 2. Tuples `(T1, T2, ...)`
 Tuples group together multiple values of **different types**.
-* **Initialization:** ```rust
+* **Initialization:***
+  ```rust
   let human: (String, i32, bool) = ("Alice".to_string(), 30, false);
   ```
 
@@ -43,3 +44,4 @@ Rust distinguishes between owned strings and string references, which impacts wh
 
 
 ---
+
