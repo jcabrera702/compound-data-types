@@ -12,6 +12,7 @@ Arrays have a **fixed length** known at compile time. All elements must be of th
 Tuples group together multiple values of **different types**.
 * **Initialization:** ```rust
   let human: (String, i32, bool) = ("Alice".to_string(), 30, false);
+  ```
 
 ## 3. Slices &[T]
 A slice is a reference to a contiguous sequence of elements in a collection rather than the whole collection.
@@ -39,5 +40,6 @@ Rust distinguishes between owned strings and string references, which impacts wh
 | :--- | :--- | :--- | :--- |
 | `String` | Owned String | Heap | Dynamic |
 | `&str` | String Slice | Stack (points to data) | Fixed (Pointer + Length) |
+
 
 ---
